@@ -1,0 +1,19 @@
+11/27/2025
+1. isMobile / responsive
+2. Below page mockup
+3. Register button function
+
+11/28/2025
+Additional Requirement:
+Apply Promise in signup/sign-in function
+Sign up form: First Name, Last name, email, mobile, country, password, confirm password.
+Responsive view 
+Make sure you can run your page on public/localhost, so I can easily check.
+After clicking the Login button, the login popup dialog will show.
+When complete registration/ login successful, 
+the sign up section will hide and show “Hi XXX, welcome to Blackwell, please verify your email immediately.”, 
+The user info will be stored in user state management. (file path: store/user.js)
+the Login button become “Logout”
+When clicking the Logout button, the auth store will clear the user data.
+Using Promises 
+4. Continue mockup

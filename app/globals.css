@@ -1,8 +1,19 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'ATRotisSemiSans-ExtraBold';
+  src: url('../public/font/ATRotisSemiSans-ExtraBold.woff2') format('woff2');
+  font-weight: 800; /* or as defined by the font */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ATRotisSemiSans-Light';
+  src: url('../public/font/ATRotisSemiSans-Light.woff2') format('woff2');
+  font-weight: 300; /* or as defined by the font */
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme inline {
@@ -12,15 +23,187 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #3a53ba;
+    --color-black-faded: rgba(0, 0, 0, 0.25);
   }
+}
+
+@media (max-width: 768px) {
+  .section1Wrapper {
+    grid-template-columns: 1fr; /* single column on small screens */
+  }
+}
+
+/* .section1Left img {
+  margin-left: 0;
+  width: 150px; 
+}
+
+@media (max-width: 1024px) {
+  .section1Left img {
+    margin-left: -150px; 
+    width: 200px;
+  }
+} */
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.topBarWrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.contentWrapper {
+  max-width: 100% !important;
+  border: 1px solid var(--color-black-faded);
+  margin-left: clamp(16px, 8%, 131px);
+  margin-right: clamp(16px, 8%, 131px);
+  overflow: hidden;
+}
+
+.sectionContentWrapper {
+  padding-top: clamp(16px, 10%, 131px);
+}
+
+.sectionContentWrapperWithBg {
+  padding-top: clamp(16px, 28%, 350px);
+}
+
+.section1Wrapper {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2rem; /* spacing between columns */
+  align-items: center;
+}
+
+.section1 {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 60px 40px;
+  background: #214aa1;
+  color: white;
+  gap: 60px;
+}
+
+.section1Left {
+  width: auto;
+}
+
+.section1Left img {
+  height: auto;
+  margin-left: -275px; /* shift image to the left beyond normal grid */
+}
+
+.section1Right {
+  max-width: auto;
+}
+
+.section1Right h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.blue-text h3 {
+  color: #01f2f2;
+  font-size: 20px;
+}
+
+.gold-text h3 {
+  color: #f2df79;
+  font-size: 20px;
+}
+
+.description {
+  width: 100%; /* takes full width of parent */
+  white-space: normal; /* allow wrapping */
+  word-wrap: break-word; /* break long words if needed */
+  overflow-wrap: break-word; /* modern equivalent */
+  line-height: 1.5;
+  color: white;
+  font-size: 15px;
+}
+
+.description.gold {
+  color: #f2df79;
+}
+
+.bordered-box {
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 24px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.download-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.app-images {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* smaller gap between Google Play and App Store */
+}
+
+.highlight {
+  color: #ffd230;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tags button {
+  background: #234eac;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+}
+
+.cta {
+  background: #ff9d00;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-size: 18px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.risk-text {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 16px;
+  color: white;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'ATRotisSemiSans', sans-serif;
 }
+
+/* 1. Title/body text color:
+dark blue: #01f2f2
+light blue: #040dbf
+gold: #f2df79
+orange: #F37406
+2. Background color: #3A53BA
+3. main title: ATRotisSemiSans-ExtraBold
+4. subtitle: ATRotisSemiSans-Light */

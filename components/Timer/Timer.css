@@ -1,0 +1,44 @@
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timer-inner {
+  display: flex;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.timer-segment {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  min-width: 50px;
+}
+
+.divider,
+.time {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.diver {
+  padding: 0 2rem;
+}
+
+.label {
+  font-size: 12px;
+  margin-top: 4px;
+  color: white;
+}
+
+h1 {
+  z-index: 2;
+  font-size: 10rem;
+  color: white;
+}

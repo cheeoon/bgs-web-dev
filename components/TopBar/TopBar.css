@@ -1,0 +1,19 @@
+.topBar {
+  width: 100%;
+  position: fixed;
+  background-color: #0b3254;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 9999;
+  padding: 0 1rem 0 1rem;
+  margin: 0 auto !important;
+  height: 80px;
+}
+
+.topBarContent {
+  padding: 0 131px;
+  max-width: 1520px !important;
+}
+
+/* topBar  background color: #112A4D */
