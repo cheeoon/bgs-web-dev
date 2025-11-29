@@ -16,38 +16,38 @@ const section2 = () => {
           <Video poster={mobileVideoPosterPath} src={mobileVideoPath}></Video>
         </div>
         <div className="grid">
-          <ul className="gap-4">
-            <li className="flex items-top gap-2">
+          <ul>
+            <li className="flex items-top gap-2 pb-10 pt-10">
               <Image path={listIcon} alt="Logo" width={150} height={150} />
               <span className="text-white self-top">
                 <h4>Spotlight</h4>
               </span>
             </li>
-            <li className="flex  items-top gap-2">
+            <li className="flex  items-top gap-2 pb-10">
               <Image path={listIcon} alt="Logo" width={150} height={150} />
               <span className="text-white self-top">
                 <h4>Top Strategies</h4>
               </span>
             </li>
-            <li className="flex  items-top gap-2">
+            <li className="flex  items-top gap-2 pb-10">
               <Image path={listIcon} alt="Logo" width={150} height={150} />
               <span className="text-white self-top">
                 <h4>Low Drawdown</h4>
               </span>
             </li>
-            <li className="flex  items-top gap-2">
+            <li className="flex  items-top gap-2 pb-10">
               <Image path={listIcon} alt="Logo" width={150} height={150} />
               <span className="text-white self-top">
                 <h4>Medium Drawdown</h4>
               </span>
             </li>
-            <li className="flex  items-top gap-2">
+            <li className="flex  items-top gap-2 pb-10">
               <Image path={listIcon} alt="Logo" width={150} height={150} />
               <span className="text-white self-top">
                 <h4>High Drawdown</h4>
               </span>
             </li>
-            <li className="flex  items-top gap-2">
+            <li className="flex  items-top gap-2 pb-10">
               <Image path={listIcon} alt="Logo" width={150} height={150} />
               <span className="text-white self-top">
                 <h4>New Strategies</h4>

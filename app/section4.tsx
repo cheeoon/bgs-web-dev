@@ -26,8 +26,6 @@ const Section4 = () => {
                 Install our app, &quot;Blackwell Invest&quot;
               </span>
             </div>
-
-            {/* Step 2 - connect to image */}
             <div
               onClick={handleClick}
               className="flex items-center border border-[#F37406] rounded-lg p-4 "
@@ -37,14 +35,12 @@ const Section4 = () => {
                 Choose a signal Master and click &quot;Copy&quot;
               </span>
             </div>
-            {/* Step 3 */}
             <div className="flex items-center border border-[#f2df79] rounded-lg p-4">
               <span className="text-xl font-bold text-[#f2df79] pr-4">3</span>
               <span className="text-white">
                 Set your trade size preferences
               </span>
             </div>
-            {/* Step 4 */}
             <div className="flex items-center border border-[#F37406] rounded-lg p-4">
               <span className="text-xl font-bold text-[#F37406] pr-4">4</span>
               <span className="text-white">
@@ -55,7 +51,7 @@ const Section4 = () => {
           <div>
             <div className="relative rounded-lg shadow-lg border border-[#F37406]">
               <Image
-                path={guide2} // your screenshot
+                path={guide2}
                 alt="Trade example"
                 width={400}
                 height={400}

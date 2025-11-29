@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px 12px 0 0; /* top-left, top-right only */
+  background-color: #fff4cc; /* inactive */
+  transition: all 0.25s ease;
+}
+
+.navbutton:hover {
+  filter: brightness(1.05);
+}
+
+.navbutton.active {
+  background-color: #ffd700; /* gold when active */
+}

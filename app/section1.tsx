@@ -54,7 +54,7 @@ const section1 = () => {
         <div className="gold-text">
           <h3>Ready-To-Go Strategies</h3>
         </div>
-        <div>
+        <div className="w-3/4">
           <p className="description">
             Browse and copy hundreds of investment strategies developed by
             master traders! Whether you are a pro or beginner, you can now trade
@@ -62,10 +62,12 @@ const section1 = () => {
           </p>
         </div>
         <div className="tags">
-          <button>Forex</button>
-          <button>Precious Metals</button>
-          <button>Oil</button>
-          <button>Indices</button>
+          <div className="border border-[#f2df79] rounded-lg p-2 ">Forex</div>
+          <div className="border border-[#F37406] rounded-lg p-2">
+            Precious Metals
+          </div>
+          <div className="border border-[#ff0000] rounded-lg p-2">Oil</div>
+          <div className="border border-[#040dbf] rounded-lg p-2">Indices</div>
         </div>
         <div>
           <RegisterButton></RegisterButton>

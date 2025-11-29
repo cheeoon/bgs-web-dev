@@ -10,6 +10,7 @@ import step6 from '../../public/resources/register/step-6.png';
 import step7 from '../../public/resources/register/step-7.png';
 import step8 from '../../public/resources/register/step-8.png';
 import arrow from '../../public/resources/arrow.png';
+import React from 'react';
 
 const step1Text = 'Install our app, “Blackwell Invest”';
 const step2Text = 'Login OR create a new account';
@@ -54,7 +55,7 @@ const Slideshow = () => {
       >
         {images.map((src, i) => {
           return (
-            <>
+            <React.Fragment key={i}>
               <div
                 key={`img-${i}`}
                 className="shrink-0 border border-[#F37406] rounded-4xl overflow-hidden]"
@@ -73,16 +74,15 @@ const Slideshow = () => {
                   </div>
                 </div>
               </div>
-              {/* Insert arrow between first and second image */}
               {i !== 7 && (
                 <div
-                  key="arrow"
+                  key={`arrow-${i}`}
                   className="shrink-0 rounded-lg -mx-4 bg-[#3a53ba] flex items-center justify-center"
                 >
                   <Image path={arrow} alt="Arrow" width={50} height={50} />
                 </div>
               )}
-            </>
+            </React.Fragment>
           );
         })}
       </div>

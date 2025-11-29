@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'ATRotisSemiSans-ExtraBold';
   src: url('../public/font/ATRotisSemiSans-ExtraBold.woff2') format('woff2');
-  font-weight: 800; /* or as defined by the font */
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'ATRotisSemiSans-Light';
   src: url('../public/font/ATRotisSemiSans-Light.woff2') format('woff2');
-  font-weight: 300; /* or as defined by the font */
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -36,24 +36,31 @@
   }
 }
 
-/* .section1Left img {
-  margin-left: 0;
-  width: 150px; 
+.section1Left img {
+  transform: translate(-100px, 175px) scale(1.5);
+  transform-origin: center;
 }
 
+/* Small screens*/
 @media (max-width: 1024px) {
   .section1Left img {
-    margin-left: -150px; 
-    width: 200px;
+    transform: translate(-10px, 100px) scale(1.75);
   }
-} */
+}
+
+/* Extra small screens*/
+@media (max-width: 850px) {
+  .section1Left img {
+    transform: translate(20px, 50px) scale(1.75);
+  }
+}
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
 .topBarWrapper {
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 1000;
 }
@@ -63,7 +70,9 @@
   border: 1px solid var(--color-black-faded);
   margin-left: clamp(16px, 8%, 131px);
   margin-right: clamp(16px, 8%, 131px);
+  padding-bottom: 20px;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* soft shadow */
 }
 
 .sectionContentWrapper {
@@ -112,9 +121,18 @@
   font-weight: 700;
 }
 
+.blue-text h3,
+.blue-text h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .blue-text h3 {
   color: #01f2f2;
-  font-size: 20px;
+}
+
+.blue-text h4 {
+  color: #040dbf;
 }
 
 .gold-text h3 {
@@ -126,7 +144,7 @@
   width: 100%; /* takes full width of parent */
   white-space: normal; /* allow wrapping */
   word-wrap: break-word; /* break long words if needed */
-  overflow-wrap: break-word; /* modern equivalent */
+  overflow-wrap: break-word;
   line-height: 1.5;
   color: white;
   font-size: 15px;
@@ -136,12 +154,8 @@
   color: #f2df79;
 }
 
-.bordered-box {
-  border: 2px solid #ffffff;
-  border-radius: 12px;
-  padding: 16px;
-  margin-top: 24px;
-  background: rgba(255, 255, 255, 0.1);
+.description.black {
+  color: black;
 }
 
 .download-buttons {
@@ -150,40 +164,11 @@
   margin-bottom: 32px;
 }
 
-.app-images {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* smaller gap between Google Play and App Store */
-}
-
-.highlight {
-  color: #ffd230;
-}
-
 .tags {
   display: flex;
   gap: 10px;
   margin: 20px 0;
-}
-
-.tags button {
-  background: #234eac;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
   color: white;
-  font-size: 14px;
-}
-
-.cta {
-  background: #ff9d00;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  color: #000;
-  font-size: 18px;
-  margin-top: 24px;
-  cursor: pointer;
 }
 
 .risk-text {

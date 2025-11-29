@@ -1,0 +1,22 @@
+.submit-button {
+  padding: 10px 20px;
+  background-color: #f37406;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect */
+.submit-button:hover {
+  background: linear-gradient(90deg, #ea580c, #9a3412);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button:disabled {
+  background-color: #9ca3af; /* gray */
+  cursor: not-allowed;
+}

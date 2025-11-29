@@ -3,8 +3,8 @@
   position: fixed;
   background-color: #0b3254;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
   z-index: 9999;
   padding: 0 1rem 0 1rem;
   margin: 0 auto !important;
@@ -13,7 +13,13 @@
 
 .topBarContent {
   padding: 0 131px;
-  max-width: 1520px !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .topBar {
+    height: auto;
+    display: block;
+  }
 }
 
 /* topBar  background color: #112A4D */
