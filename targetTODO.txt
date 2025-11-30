@@ -17,3 +17,18 @@ the Login button become “Logout”
 When clicking the Logout button, the auth store will clear the user data.
 Using Promises 
 4. Continue mockup
+
+
+
+signupButton ---passProps--> signupForm --submit---> modelbox 
+signuoButton
+if (pros){
+  signupForm
+} 
+if (submit){
+  modalbox
+}
+
+component: 
+signupFlow 'useClient'
+signupButton, signupForm, modelbox

@@ -1,46 +1,20 @@
-import Timer from '@/components/Timer/Timer';
-import Image from '@/components/Image/Image';
-import Logo from '../public/resources/logo.png';
 import '../app/globals.css';
-import TopBar from '@/components/TopBar/TopBar';
 import Section1 from './section1';
 import Section2 from './section2';
 import Section3 from './section3';
 import Section4 from './section4';
-import Section5 from './section5/section5';
-import RegisterButton from '@/components/RegisterButton/RegisterButton';
 import Section6 from './section6';
 import Section7 from './section7';
 import Section8 from './section8';
+import Section5 from './section5/section5';
+import TopBarSection from './topbarSection';
+import ScrollToTopButton from '@/components/ScrollToTopButton/ScrollToTopButton';
 
 export default function Home() {
   return (
     <>
       <div className="topBarWrapper">
-        <TopBar>
-          <div className="grid grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 items-center w-full min-h-[60px] px-4 gap-x-4">
-            {/* Logo: left */}
-            <div className="justify-self-start w-full">
-              <Image path={Logo} alt="Logo" width={150} height={150} />
-            </div>
-
-            {/* Middle content: centered */}
-            <div className="hidden lg:flex flex-col items-center justify-center text-white justify-self-center">
-              <h5>PROMOTION</h5>
-              <h5>ENDS IN</h5>
-            </div>
-
-            {/* Timer */}
-            <div className="hidden lg:flex justify-self-center">
-              <Timer />
-            </div>
-
-            {/* Register Button: right */}
-            <div className="justify-self-end w-full flex justify-end">
-              <RegisterButton />
-            </div>
-          </div>
-        </TopBar>
+        <TopBarSection />
       </div>
       <div className="contentWrapper">
         <section className="sectionContentWrapper">
@@ -71,6 +45,7 @@ export default function Home() {
           <Section8 />
         </section>
       </div>
+      <ScrollToTopButton></ScrollToTopButton>
     </>
   );
 }

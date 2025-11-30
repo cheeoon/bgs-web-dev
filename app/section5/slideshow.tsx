@@ -34,7 +34,8 @@ const texts = [
   step8Text,
 ];
 
-const Slideshow = () => {
+const slideshow = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const containerRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: 'left' | 'right') => {
@@ -101,4 +102,4 @@ const Slideshow = () => {
     </div>
   );
 };
-export default Slideshow;
+export default slideshow;

@@ -184,6 +184,34 @@ body {
   font-family: 'ATRotisSemiSans', sans-serif;
 }
 
+.step2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #f37406;
+  border-radius: 6px;
+  position: relative;
+  border-right: none;
+  height: 100%;
+}
+
+.step2::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  height: auto;
+  right: -30px;
+  width: 35px;
+  height: 102.5%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top: 1px solid #f37406;
+  border-bottom: 1px solid #f37406;
+  background-color: var(--background);
+}
+
 /* 1. Title/body text color:
 dark blue: #01f2f2
 light blue: #040dbf

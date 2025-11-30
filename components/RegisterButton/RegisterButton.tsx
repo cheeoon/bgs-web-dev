@@ -1,5 +1,6 @@
-import React from 'react';
 import './RegisterButton.css';
+
+// Also known as signup button
 
 interface RegisterButtonProps {
   onClick?: () => void;
@@ -7,17 +8,17 @@ interface RegisterButtonProps {
   fullWidth?: boolean;
 }
 
-const RegisterButton: React.FC<RegisterButtonProps> = ({
+const RegisterButton = ({
   onClick,
   size = 'md',
   fullWidth = false,
-}) => {
+}: RegisterButtonProps) => {
   return (
     <button
       onClick={onClick}
       className={`register-button ${size} ${fullWidth ? 'full-width' : ''}`}
     >
-      Register Now
+      Register Now / Login
     </button>
   );
 };

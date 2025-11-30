@@ -1,0 +1,36 @@
+.button {
+  background: #f37406;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    background: linear-gradient(90deg, #ea580c, #9a3412);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &.sm {
+    padding: 6px 16px;
+    font-size: 0.875rem;
+  }
+
+  &.md {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  &.lg {
+    padding: 16px 32px;
+    font-size: 1.125rem;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+}

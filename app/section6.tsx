@@ -3,7 +3,7 @@ import Icon2 from '../public/resources/choose/icon-2.png';
 import Icon3 from '../public/resources/choose/icon-3.png';
 import Icon4 from '../public/resources/choose/icon-4.png';
 import Image from '@/components/Image/Image';
-import RegisterButton from '@/components/RegisterButton/RegisterButton';
+import AuthFlow from './authFlow';
 
 const rows = [
   {
@@ -28,7 +28,7 @@ const rows = [
   },
 ];
 
-const Section6 = () => {
+const section6 = () => {
   return (
     <div className="grid grid-rows-[auto_auto_auto] gap-8 justify-items-center">
       <div className="blue-text self-center">
@@ -53,10 +53,10 @@ const Section6 = () => {
         ))}
       </div>
       <div>
-        <RegisterButton></RegisterButton>
+        <AuthFlow></AuthFlow>
       </div>
     </div>
   );
 };
 
-export default Section6;
+export default section6;

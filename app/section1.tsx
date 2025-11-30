@@ -6,7 +6,7 @@ import MainTitle from '@/components/MainTitle/MainTitle';
 import SubTitle from '@/components/SubTitle/SubTitle';
 import Regulated from '../public/resources/regular.png';
 import Image from '@/components/Image/Image';
-import RegisterButton from '@/components/RegisterButton/RegisterButton';
+import AuthFlow from './authFlow';
 
 const section1 = () => {
   return (
@@ -70,7 +70,7 @@ const section1 = () => {
           <div className="border border-[#040dbf] rounded-lg p-2">Indices</div>
         </div>
         <div>
-          <RegisterButton></RegisterButton>
+          <AuthFlow></AuthFlow>
         </div>
         <p className="risk-text">
           When you invest, your capital is at risk. Be prudent.

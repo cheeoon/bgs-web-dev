@@ -7,11 +7,11 @@ interface SubmitButtonProps {
   disabled?: boolean;
 }
 
-const SubmitButton: React.FC<SubmitButtonProps> = ({
+const SubmitButton = ({
   text = 'Submit',
   onClick,
   disabled = false,
-}) => {
+}: SubmitButtonProps) => {
   return (
     <button
       type="submit"

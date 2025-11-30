@@ -5,8 +5,9 @@ import GooglePlay from '../public/resources/google-play.jpg';
 import AppStore from '../public/resources/app-store.jpg';
 import guide2 from '../public/resources/guide/guide-2.png';
 
-const Section4 = () => {
-  const [isActive, setIsActive] = useState(false);
+const section4 = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [isActive, setIsActive] = useState<boolean>(false);
 
   const handleClick = () => {
     setIsActive(!isActive); // toggle state
@@ -26,10 +27,7 @@ const Section4 = () => {
                 Install our app, &quot;Blackwell Invest&quot;
               </span>
             </div>
-            <div
-              onClick={handleClick}
-              className="flex items-center border border-[#F37406] rounded-lg p-4 "
-            >
+            <div onClick={handleClick} className="step2">
               <span className="text-xl font-bold text-[#F37406] pr-4">2</span>
               <span className="text-white">
                 Choose a signal Master and click &quot;Copy&quot;
@@ -49,7 +47,7 @@ const Section4 = () => {
             </div>
           </div>
           <div>
-            <div className="relative rounded-lg shadow-lg border border-[#F37406]">
+            <div className="relative rounded-lg shadow-lg border border-[#F37406] -ml-[3px] -z-5">
               <Image
                 path={guide2}
                 alt="Trade example"
@@ -80,4 +78,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default section4;

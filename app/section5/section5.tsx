@@ -1,8 +1,7 @@
-import React from 'react';
 import Slideshow from './slideshow';
-import RegisterButton from '@/components/RegisterButton/RegisterButton';
+import AuthFlow from '../authFlow';
 
-const Section5 = () => {
+const section5 = () => {
   return (
     <div className="grid grid-rows-[auto_auto_auto] gap-8 justify-items-center">
       <div className="blue-text self-center">
@@ -12,10 +11,10 @@ const Section5 = () => {
         <Slideshow></Slideshow>
       </div>
       <div>
-        <RegisterButton></RegisterButton>
+        <AuthFlow></AuthFlow>
       </div>
     </div>
   );
 };
 
-export default Section5;
+export default section5;

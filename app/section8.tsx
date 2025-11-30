@@ -2,18 +2,18 @@
 
 import FormField from '@/components/FormField/FormField';
 import SubmitButton from '@/components/SubmitButton/SubmitButton';
-import React from 'react';
-
-const Section8 = () => {
-  const [formData, setFormData] = React.useState({
+import React, { useState } from 'react';
+const section8 = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     mobileno: '',
     countryofresidence: '',
     message: '',
   });
-
-  const [errors, setErrors] = React.useState({
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [errors, setErrors] = useState({
     name: '',
     email: '',
     mobileno: '',
@@ -116,4 +116,4 @@ const Section8 = () => {
   );
 };
 
-export default Section8;
+export default section8;

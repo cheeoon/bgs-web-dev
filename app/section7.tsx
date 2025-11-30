@@ -39,7 +39,8 @@ const items = [
   },
 ];
 
-const Section7 = () => {
+const section7 = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [itemId, setItemId] = useState<string>('Activity');
 
   const selectedItem = items.find((item) => item.id === itemId) || items[1];
@@ -97,4 +98,4 @@ const Section7 = () => {
   );
 };
 
-export default Section7;
+export default section7;
