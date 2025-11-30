@@ -41,7 +41,7 @@ export default function Home() {
           <Section7 />
         </section>
         <section className="relative sectionContentWrapper">
-          <div className="absolute inset-0 -z-10 bg-[url(/resources/bg-3.png)] bg-cover h-300 md:h-[750px]"></div>
+          <div className="absolute inset-0 -z-10 bg-[url(/resources/bg-3.png)] bg-cover h-350 md:h-[750px]"></div>
           <Section8 />
         </section>
       </div>
